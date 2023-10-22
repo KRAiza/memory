@@ -11,3 +11,30 @@ body {
 h1 {
     color: #333;
 }
+
+#gameArea {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#notationDisplay {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}

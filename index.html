@@ -9,6 +9,18 @@
 <body>
     <h1>Jeu de Memory - Notation Algébrique</h1>
     <!-- Le contenu du jeu sera ajouté ici -->
+    <div id="gameArea">
+        <p id="notationDisplay">e4</p>
+        <div id="options">
+            <button onclick="checkAnswer('Ouverture du pion du roi')">Ouverture du pion du roi</button>
+            <button onclick="checkAnswer('Défense sicilienne')">Défense sicilienne</button>
+            <button onclick="checkAnswer('Ouverture de la dame')">Ouverture de la dame</button>
+            <button onclick="checkAnswer('Défense française')">Défense française</button>
+        </div>
+        <p id="feedback"></p>
+        <button onclick="nextMove()">Prochain mouvement</button>
+    </div>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
