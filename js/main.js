@@ -1,21 +1,7 @@
 let currentMove = '';
 let moves = [
-    { 
-        notation: 'e4 e5', 
-        name: 'le pion blanc joue de e2 en e4 et le pion noir joue de e7 en e5' 
-    },
-    { 
-        notation: 'Cf3 Cc6', 
-        name: 'cavalier blanc joue de g1 en f3 et cavalier noir joue de b8 en c6' 
-    },
-    { 
-        notation: 'Fb5 a6', 
-        name: 'fou blanc en b5, pion en a6' 
-    },
-    { 
-        notation: 'Fxc6 dxc6', 
-        name: 'fou prend cavalier et pion d7 prend fou' 
-    }
+  { notation: 'e4 e5', name: 'le pion blanc joue de e2 en e4 et le pion noir joue de e7 en e5', reviews: 0 },
+  // ... autres mouvements
 ];
 
 function randomMove() {
