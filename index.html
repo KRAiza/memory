@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu de Memory - Notation Algébrique</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <h1>Jeu de Memory - Notation Algébrique</h1>
     <!-- Le contenu du jeu sera ajouté ici -->
     <div id="gameArea">
         <p id="notationDisplay">e4</p>
         <div id="options">
-            <button onclick="checkAnswer('Ouverture du pion du roi')">Ouverture du pion du roi</button>
-            <button onclick="checkAnswer('Défense sicilienne')">Défense sicilienne</button>
-            <button onclick="checkAnswer('Ouverture de la dame')">Ouverture de la dame</button>
-            <button onclick="checkAnswer('Défense française')">Défense française</button>
+            <button id="option1" onclick="checkAnswer(this.textContent)"></button>
+            <button id="option2" onclick="checkAnswer(this.textContent)"></button>
+            <button id="option3" onclick="checkAnswer(this.textContent)"></button>
+            <button id="option4" onclick="checkAnswer(this.textContent)"></button>
+
         </div>
         <p id="feedback"></p>
         <button onclick="nextMove()">Prochain mouvement</button>
     </div>
-    
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
